@@ -1,8 +1,8 @@
-# Faceuidd - Facebook ID Retriever
+# FACEBOOK ID RETRIEVER - FACEUIDD
 
 ![Faceuidd Logo](https://github.com/user-attachments/assets/00626f43-fb6e-49ec-b275-34631d86cc42)
 
-Faceuidd is a simple online tool to quickly get Facebook IDs from profiles, groups, or posts. Just enter a Facebook link to get the ID in seconds. Perfect for developers, researchers, and marketers needing Facebook IDs for API integration, data analysis, and tracking.
+Faceuidd is a simple and fast online tool to retrieve Facebook IDs from profiles, groups, or posts. Just enter the Facebook link and get the ID in seconds. Ideal for developers, researchers, and digital marketers needing Facebook IDs for API integrations, data analysis, and activity tracking.
 
 ## Features
 - Retrieve Facebook IDs from profiles, groups, or posts.
