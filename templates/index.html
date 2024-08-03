@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faceuidd - Facebook ID Retriever</title>
+    <link rel="icon" href="{{ url_for('static', filename='icons/facebook.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-id-badge"></i> Facebook ID Retriever</h1>
+        <p class="description">Faceuidd is an easy-to-use online tool to grab ID from Facebook profiles, groups or posts. Enter the Facebook link and get the ID quickly..</p>
+        <div class="input-group">
+            <input type="text" id="fb-link" placeholder=""/>
+            <button id="get-id-btn"><i class="fas fa-search"></i>Get ID Now</button>
+        </div>
+        <p class="note">Please wait 5-30 seconds for the system to retrieve the ID</p>
+    </div>
+
+    <div class="instructions">
+        <h2>How to use</h2>
+        <ol>
+            <li>Copy the Facebook link of the profile, group, or post you want to retrieve the ID for.</li>
+            <li>Paste the link into the input field above.</li>
+            <li>Click on the "Get ID Now" button.</li>
+            <li>Wait for a few seconds and the ID will be displayed in a modal.</li>
+        </ol>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
