@@ -2,7 +2,7 @@
 
 ![Faceuidd Logo](https://github.com/user-attachments/assets/00626f43-fb6e-49ec-b275-34631d86cc42)
 
-Faceuidd is an easy-to-use online tool designed to quickly retrieve Facebook IDs from profiles, groups, or posts. By simply entering the appropriate Facebook link, users can obtain the ID in seconds. This tool is ideal for developers, researchers, and digital marketers who need to extract unique Facebook IDs for API integrations, data analysis, and activity tracking.
+Faceuidd is a simple online tool to quickly get Facebook IDs from profiles, groups, or posts. Just enter a Facebook link to get the ID in seconds. Perfect for developers, researchers, and marketers needing Facebook IDs for API integration, data analysis, and tracking.
 
 ## Features
 - Retrieve Facebook IDs from profiles, groups, or posts.
@@ -56,7 +56,29 @@ If you would like to support this project, you can donate via:
 - [PayPal](https://paypal.me/rozhak9)
 
 ## Screenshot
+![FunPic_20240803_091304861](https://github.com/user-attachments/assets/22df319d-b3bc-448c-9c9a-131ba18d2204)
 
+![FunPic_20240803_091237802](https://github.com/user-attachments/assets/a4c1f2f1-a494-4736-a382-1897fe912ba1)
+
+## API Usage
+
+You can also use Faceuidd via its API. Here is an example of how to use the API with Python:
+
+```python
+import requests
+import json
+
+headers = {
+    "Content-Type": "application/json"
+}
+
+data = json.dumps({
+    "link": "https://www.facebook.com/share/p/...?"
+})
+
+response = requests.post('https://www.faceuidd.rozhakxd.my.id/api/v1/facebook-id-retriever/', headers=headers, data=data)
+print(response.json())
+```
 
 ## License
 
